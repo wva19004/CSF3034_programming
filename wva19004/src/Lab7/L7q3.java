@@ -15,10 +15,27 @@ public class L7q3 {
         
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number for the line pattern");
-        int line=6;//= input.nextInt();
+        int line=6,n = input.nextInt();
 
         System.out.println("Pattern I\tPattern II\tPattern III\tPattern IV");
-                
+        for (int i = 1,k=n; i <= n; i++,k--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j+" ");
+            }
+            
+            if(i<=n/2)
+                System.out.print("\t\t");
+            else
+                System.out.print("\t");
+            
+            for (int j = 1; j <=k; j++) {
+                System.out.print(j+" ");
+            }
+            
+            System.out.println("");
+        }
+        System.out.println("");
+        System.out.println("");
         for(int i = 1;i<=line;i++){
             for(int j = 1; j<=i;j++){
                 System.out.print(j+" ");
