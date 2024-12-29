@@ -18,7 +18,7 @@ public class L10q2 {
         File myFile = new File("new_input.txt");
         Scanner scan = new Scanner(myFile);
         
-        while(scan.hasNext()){
+        while(scan.hasNextLine()){
         System.out.println(scan.nextLine());
   
         }
